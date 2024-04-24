@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goala</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="container">
+        <div>
+            <a href="index.html">Goala</a> ·
+            <a href="Goalapremium.html">Goala Premium</a>
+            <a href="https://www.instagram.com/goala_app" target="_blank">Instagram</a> ·
+            <a href="https://www.linkedin.com/company/goala-app/" target="_blank">LinkedIn</a> ·
+            <a href="resume.html" target="_blank">Resume</a> ·
+            
+        </div>
+    </nav>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzaypCDDvDlGrK7DrZoYZAUKhKXcFwQ7qGjg&s" width="60" height="60" alt="Goala logo">
+        <h1>goala: achieve more together</h1> <!-- Simplified text for a clear message -->
+        <h2>Watch Our Introduction Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wl3xMss4X-o" frameborder="0" allowfullscreen></iframe>
+
+    </header>
+    
+    <main>
+        <h2>set goals / find community / document the journey</h2> <!-- Action-oriented subheading -->
+        <p>Sign up for early access.</p>
+        
+        <div class="email-signup">
+            <form action="https://example.com/submit" method="POST" id="emailForm">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Goala. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for handling the form submission -->
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            fetch('https://script.google.com/macros/s/AKfycbzYSuoDARcsv7-cWRB8QtlGCib_t7bnhv9e3F5J6yMWHre7qHO2CHWjvTDNdLvh95lh_w/exec', {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                alert('Thank you for registering! We will be in touch soon.');
+            }).catch(error => {
+                alert('There was an error with your submission, please try again.');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Basic reset and styles */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Updated the font for a cleaner look */
+    background-color: #fff; /* Lighter background for a modern feel */
+    color: #333; /* Darker font color for contrast */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+        /* Navigation styles */
+        .container {
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+nav {
+    background-color: #ffffff; /* White background for nav */
+    border-bottom: 1px solid #dddddd; /* Light border for some definition */
+    padding: 10px 0; /* Padding for visual spacing */
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+    font-size: 14px;
+}
+nav a:hover {
+    color: #22b573; /* Highlight color on hover */
+}
+/* Header styles */
+header {
+    background-color: #fff; /* White background for a clean header */
+    color: #333; /* Matching the body text color */
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 4.0em; /* Reduced the size for balance */
+    font-weight: bold; /* Make the font bold */
+    margin: 0.67em 0; /* Default margin for h1 for proper spacing */
+}
+/* Main content styles */
+main {
+    text-align: center;
+    margin: 50px auto;
+}
+main h2 {
+    color: #333; /* Same as the body color for consistency */
+    font-size: 1.7em; /* Reduced the size for subtlety */
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 1.0em; /* Standard font size for readability */
+    margin-bottom: 20px;
+}
+/* Email form styles */
+.email-signup {
+    background-color: #fff; /* Changed to white for a clean appearance */
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.email-signup input[type=email], .email-signup input[type=submit] {
+    padding: 10px;
+    border: 2px solid #ddd; /* Added a border for definition */
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 0 10px 10px 0; /* Spacing around elements */
+}
+.email-signup input[type=email] {
+    width: 250px; /* Email input width */
+}
+.email-signup input[type=submit] {
+    border: 0;
+    background-color: #333; /* Darker button for contrast */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for a hover effect */
+}
+.email-signup input[type=submit]:hover {
+    background-color: #22b573; /* Color change on hover */
+}
+/* Footer styles */
+footer {
+    background-color: #fff; /* Changed to white for a clean footer */
+    color: #333; /* Same as the body text color */
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    font-size: 0.8em;
+};
